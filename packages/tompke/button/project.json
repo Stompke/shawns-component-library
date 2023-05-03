@@ -1,0 +1,66 @@
+{
+  "name": "@tompke/button",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "packages/tompke/button/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "defaultConfiguration": "node",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/tompke/button",
+        "entry": "./src/index.ts",
+        "sourcemap": true
+      },
+      "configurations": {
+        "node": {
+          "optimization": true
+        },
+        "cdn": {
+          "outputPath": "dist/packages/tompke/button/dist",
+          "configFile": "packages/tompke/button/vite.cdn.config.ts",
+          "sourcemap": false,
+          "minify": true
+        }
+      }
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": ["{projectRoot}/coverage"],
+      "options": {
+        "coverage": true,
+        "passWithNoTests": true
+      },
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/tompke/button/**/*.ts"]
+      }
+    },
+    "prepublish": {
+      "executor": "@tompke/publish:npm",
+      "options": {
+        "output": "dist/packages/tompke/button/",
+        "registry": "https://www.npmjs.com/settings/tompke/packages"
+      },
+      "dependsOn": ["build"]
+    },
+    "publish": {
+      "executor": "@tompke/publish:netstorage",
+      "options": {
+        "uploadDirectory": "970108",
+        "path": "dist/packages/tompke/button/dist/",
+        "domainName": "aacdn",
+        "nspath": "/970108",
+        "dryRun": false
+      },
+      "dependsOn": ["build:cdn", "prepublish"]
+    }
+  },
+  "tags": ["component:button", "component"],
+  "implicitDependencies": ["@tompke/tailwind"]
+}

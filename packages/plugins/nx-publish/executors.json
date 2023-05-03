@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "executors": {
+    "npm": {
+      "implementation": "./src/executors/npm/executor",
+      "schema": "./src/executors/npm/schema.json",
+      "description": "npm executor"
+    },
+    "netstorage": {
+      "implementation": "./src/executors/netstorage/executor",
+      "schema": "./src/executors/netstorage/schema.json",
+      "description": "netstorage executor"
+    }
+  }
+}

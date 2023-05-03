@@ -1,0 +1,6 @@
+{
+  "name": "@tompke/nx-lit",
+  "version": "0.0.1",
+  "type": "module",
+  "generators": "./generators.json"
+}

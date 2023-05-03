@@ -1,0 +1,6 @@
+apiVersion: 0.2.3
+cmdAppShortName: # FltManifst
+- ShawnCom
+squads:
+- 448402 # Shawns Systems
+- 1671653 # Shawns System Tools

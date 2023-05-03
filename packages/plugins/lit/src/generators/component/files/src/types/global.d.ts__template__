@@ -1,0 +1,7 @@
+import { <%= name.replace(/\w/, c => c.toUpperCase()) %> } from './<%= name %>.js';
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'adc-<%= name %>': <%= name.replace(/\w/, c => c.toUpperCase()) %>;
+  }
+}

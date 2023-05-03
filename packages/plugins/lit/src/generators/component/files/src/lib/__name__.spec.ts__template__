@@ -1,0 +1,7 @@
+import { <%= name.replace(/\w/, c => c.toUpperCase().replace('-', '')) %> } from './<%= name %>';
+
+describe('aileron<%= name.replace(/\w/, c => c.toUpperCase().replace('-', '')) %>', () => {
+  it('should work', () => {
+    expect(new <%= name.replace(/\w/, c => c.toUpperCase().replace('-', '')) %>()).toBeTruthy();
+  });
+});

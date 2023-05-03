@@ -1,0 +1,32 @@
+{
+  "name": "@tompke/button",
+  "version": "1.7.5-next.0",
+  "type": "module",
+  "main": "button.cjs",
+  "module": "button.js",
+  "files": [
+    "button.cjs",
+    "button.cjs.map",
+    "button.js",
+    "button.js.map",
+    "index.css",
+    "button.d.ts",
+    "css.d.ts",
+    "global.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://www.npmjs.com/settings/tompke/packages"
+  },
+  "exports": {
+    ".": {
+      "import": "./button.js",
+      "require": "./button.cjs"
+    }
+  },
+  "dependencies": {
+    "lit": "^2.5.0",
+    "tslib": "^2.3.1",
+    "tailwindcss": "^3.2.7"
+  }
+}

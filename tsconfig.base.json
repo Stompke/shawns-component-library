@@ -1,0 +1,116 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tompke/accordion": ["packages/tompke/accordion/src/index.ts"],
+      "@tompke/action-drawer": ["packages/tompke/action-drawer/src/index.ts"],
+      "@tompke/button": ["packages/tompke/button/src/index.ts"],
+      "@tompke/button-icon": ["packages/tompke/button-icon/src/index.ts"],
+      "@tompke/card": ["packages/tompke/card/src/index.ts"],
+      "@tompke/carousel": ["packages/tompke/carousel/src/index.ts"],
+      "@tompke/checkbox": ["packages/tompke/checkbox/src/index.ts"],
+      "@tompke/content-switcher": [
+        "packages/tompke/content-switcher/src/index.ts"
+      ],
+      "@tompke/data-table": ["packages/tompke/data-table/src/index.ts"],
+      "@tompke/date-picker": ["packages/tompke/date-picker/src/index.ts"],
+      "@tompke/dialog": ["packages/tompke/dialog/src/index.ts"],
+      "@tompke/divider": ["packages/tompke/divider/src/index.ts"],
+      "@tompke/grid": ["packages/tompke/grid/src/index.ts"],
+      "@tompke/icon": ["packages/tompke/icon/src/index.ts"],
+      "@tompke/layout": ["packages/tompke/layout/src/index.ts"],
+      "@tompke/link": ["packages/tompke/link/src/index.ts"],
+      "@tompke/list": ["packages/tompke/list/src/index.ts"],
+      "@tompke/loading": ["packages/tompke/loading/src/index.ts"],
+      "@tompke/nav-bar": ["packages/tompke/nav-bar/src/index.ts"],
+      "@tompke/notification": ["packages/tompke/notification/src/index.ts"],
+      "@tompke/number-input": ["packages/tompke/number-input/src/index.ts"],
+      "@tompke/overflow": ["packages/tompke/overflow/src/index.ts"],
+      "@tompke/patterns": ["packages/tompke/patterns/src/index.ts"],
+      "@tompke/popover": ["packages/tompke/popover/src/index.ts"],
+      "@tompke/publish": ["packages/plugins/nx-publish/src/index.ts"],
+      "@tompke/radio-button": ["packages/tompke/radio-button/src/index.ts"],
+      "@tompke/search": ["packages/tompke/search/src/index.ts"],
+      "@tompke/select": ["packages/tompke/select/src/index.ts"],
+      "@tompke/shared/tompke-element": [
+        "packages/shared/tompke-element/src/index.ts"
+      ],
+      "@tompke/shared/animate": ["packages/shared/animate/src/index.ts"],
+      "@tompke/shared/closest-element": [
+        "packages/shared/closest-element/src/index.ts"
+      ],
+      "@tompke/shared/device-detector": [
+        "packages/shared/device-detector/src/index.ts"
+      ],
+      "@tompke/shared/dropdown": ["packages/shared/dropdown/src/index.ts"],
+      "@tompke/shared/event": ["packages/shared/event/src/index.ts"],
+      "@tompke/shared/float": ["packages/shared/float/src/index.ts"],
+      "@tompke/shared/focus": ["packages/shared/focus/src/index.ts"],
+      "@tompke/shared/focus-visible": [
+        "packages/shared/focus-visible/src/index.ts"
+      ],
+      "@tompke/shared/focusable": ["packages/shared/focusable/src/index.ts"],
+      "@tompke/shared/font-face": ["packages/shared/font-face/src/index.ts"],
+      "@tompke/shared/form": ["packages/shared/form/src/index.ts"],
+      "@tompke/shared/get-active-element": [
+        "packages/shared/get-active-element/src/index.ts"
+      ],
+      "@tompke/shared/get-by-url": ["packages/shared/get-by-url/src/index.ts"],
+      "@tompke/shared/host-listener": [
+        "packages/shared/host-listener/src/index.ts"
+      ],
+      "@tompke/shared/modal": ["packages/shared/modal/src/index.ts"],
+      "@tompke/shared/observe-slot": [
+        "packages/shared/observe-slot/src/index.ts"
+      ],
+      "@tompke/shared/scroll": ["packages/shared/scroll/src/index.ts"],
+      "@tompke/shared/slot": ["packages/shared/slot/src/index.ts"],
+      "@tompke/shared/tabbable": ["packages/shared/tabbable/src/index.ts"],
+      "@tompke/shared/tailwind-element": [
+        "packages/shared/tailwind-element/src/index.ts"
+      ],
+      "@tompke/shared/validity": ["packages/shared/validity/src/index.ts"],
+      "@tompke/shared/watch": ["packages/shared/watch/src/index.ts"],
+      "@tompke/tabs": ["packages/tompke/tabs/src/index.ts"],
+      "@tompke/tag": ["packages/tompke/tag/src/index.ts"],
+      "@tompke/tailwind": ["packages/tompke/tailwind/src/index.ts"],
+      "@tompke/text-input": ["packages/tompke/text-input/src/index.ts"],
+      "@tompke/tile": ["packages/tompke/tile/src/index.ts"],
+      "@tompke/toast": ["packages/tompke/toast/src/index.ts"],
+      "@tompke/tokens": ["packages/tompke/tokens/src/index.ts"],
+      "@tompke/tooltip": ["packages/tompke/tooltip/src/index.ts"],
+      "@tompke/utilities/animation-registry": [
+        "packages/shared/utilities/animation-registry/src/index.ts"
+      ],
+      "@tompke/utilities/constructor": [
+        "packages/shared/utilities/constructor/src/index.ts"
+      ],
+      "@tompke/utilities/filter": [
+        "packages/shared/utilities/filter/src/index.ts"
+      ],
+      "@tompke/utilities/foreach": [
+        "packages/shared/utilities/foreach/src/index.ts"
+      ],
+      "@tompke/utilities/same-height": [
+        "packages/shared/utilities/same-height/src/index.ts"
+      ],
+      "@tompke/utilities/selector-tabbable": [
+        "packages/shared/utilities/selector-tabbable/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

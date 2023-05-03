@@ -1,0 +1,38 @@
+import { html, LitElement } from 'lit';
+import { property } from 'lit/decorators.js';
+import type { TemplateResult } from 'lit';
+import styles from './styles.css';
+
+/**
+ * <%= name.replace(/\w/, c => c.toUpperCase()) %>
+ * @element adc-<%= name %>
+ * @attr {string} [name] - The name of the component, could also be
+ * the `<slot>` content.
+ * @slot default - text content slot (default)
+ */
+export class <%= name.replace(/\w/, c => c.toUpperCase().replace('-', '')) %> extends LitElement {
+  /**
+   * @private
+   */
+  static styles = styles;
+
+  /**
+   * The name of the component, could also be the `<slot>` content.
+   * An example property.
+   * @attr {string} [name]
+   * @type {string}
+   */
+  @property() name = `<%= name %>`;
+
+  render(): TemplateResult {
+    return html`<div class="p-16">
+      <slot>${this.name}</slot>
+    </div>`;
+  }
+}
+
+try {
+  customElements.define('adc-<%= name %>', <%= name.replace(/\w/, c => c.toUpperCase().replace('-', '')) %>);
+} catch (e) {
+  // do nothing
+}

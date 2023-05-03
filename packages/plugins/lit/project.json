@@ -1,0 +1,20 @@
+{
+  "name": "plugins-lit",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/plugins/lit/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/plugins/lit/**/*.ts",
+          "packages/plugins/lit/generators.json",
+          "packages/plugins/lit/package.json"
+        ]
+      }
+    }
+  },
+  "tags": ["plugin", "plugin:lit"]
+}

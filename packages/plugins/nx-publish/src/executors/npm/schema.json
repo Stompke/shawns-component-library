@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "Npm executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "output": {
+      "type": "string",
+      "description": "Directory in which `npm publish` should be run."
+    },
+    "registry": {
+      "type": "string",
+      "description": "The registry to use when publishing packages."
+    },
+    "dryRun": {
+      "type": "boolean",
+      "description": "Indicates that you don't want npm to make any changes and that it should only report what it would have done.",
+      "default": false
+    }
+  },
+  "required": [
+    "output"
+  ]
+}

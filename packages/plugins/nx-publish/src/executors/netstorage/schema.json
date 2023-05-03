@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "Publish executor",
+  "description": "Nx plugin to upload to Akamai NetStorage",
+  "type": "object",
+  "properties": {
+    "uploadDirectory": {
+      "type": "string",
+      "description": "The directory to upload"
+    },
+    "path" : {
+      "type": "string",
+      "description": "Path where build artifacts are stored. i.e. dir"
+    },
+    "domainName": {
+      "type": "string",
+      "description": "Upload account ID"
+    },
+    "nspath": {
+      "type": "string",
+      "description": "Path to where to upload NetStorage files. i.e. _site"
+    },
+    "dryRun": {
+      "type": "boolean",
+      "description": "Rsync dry run",
+      "default": false
+    }
+  },
+  "required": ["uploadDirectory", "path", "domainName", "nspath"]
+}

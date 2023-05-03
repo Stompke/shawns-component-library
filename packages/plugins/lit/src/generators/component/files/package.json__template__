@@ -1,0 +1,27 @@
+{
+  "name": "@tompke/<%= name %>",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "<%= name %>.cjs",
+  "module": "<%= name %>.js",
+  "files": [
+    "<%= name %>.cjs",
+    "<%= name %>.cjs.map",
+    "index.css",
+    "<%= name %>.d.ts",
+    "<%= name %>.js",
+    "<%= name %>.js.map",
+    "css.d.ts",
+    "global.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./<%= name %>.js",
+      "require": "./<%= name %>.cjs"
+    }
+  },
+  "dependencies": {
+    "lit": "^2.5.0",
+    "tslib": "^2.3.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "plugins-nx-publish",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/plugins/nx-publish/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/plugins/nx-publish/**/*.ts",
+          "packages/plugins/nx-publish/generators.json",
+          "packages/plugins/nx-publish/executors.json",
+          "packages/plugins/nx-publish/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
