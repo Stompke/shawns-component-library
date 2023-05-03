@@ -1,0 +1,10 @@
+{
+    "commit": false,
+    "updateInternalDependencies": "patch",
+    "linked": [],
+    "access": "public",
+    "baseBranch": "master",
+    "ignore": [],
+    "changelog": ["@changesets/changelog-git", { "repo": "Stompke/shawns-component-library" }]
+  }
+  
