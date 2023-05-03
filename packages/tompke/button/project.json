@@ -61,6 +61,5 @@
       "dependsOn": ["build:cdn", "prepublish"]
     }
   },
-  "tags": ["component:button", "component"],
-  "implicitDependencies": ["@tompke/tailwind"]
+  "tags": ["component:button", "component"]
 }
