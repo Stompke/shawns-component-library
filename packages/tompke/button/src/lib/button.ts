@@ -10,7 +10,7 @@ export class Button extends LitElement {
 
   render() {
     return html`
-      <button>test button</button>
+      <button>test button added some features</button>
     `;
   }
 
